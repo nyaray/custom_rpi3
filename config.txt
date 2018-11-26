@@ -32,11 +32,16 @@ dtparam=audio=on
 dtoverlay=rpi-ft5406
 dtoverlay=rpi-backlight
 
+# Rotate the image 180 degrees
+lcd_rotate=2
+
 # Comment this in or modify to enable OneWire
 # NOTE: check that the overlay that you specify is in the boot partition or
 #       this won't work.
 #dtoverlay=w1-gpio-pullup,gpiopin=4
 
 # Enable the UART (/dev/ttyAMA0) on the RPi3.
-enable_uart=1
-dtoverlay=pi3-miniuart-bt
+enable_uart=0
+
+# Disabled for Bluetooth
+#dtoverlay=pi3-miniuart-bt

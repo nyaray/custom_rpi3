@@ -1,0 +1,15 @@
+config BR2_PACKAGE_LIBBLEPP
+  bool "libblepp"
+
+  select BR2_PACKAGE_BLUEZ5_TOOLS
+  select BR2_PACKAGE_BLUEZ5_UTILS
+  select BR2_PACKAGE_BLUEZ5_UTILS_COMPAT
+  select BR2_PACKAGE_BLUEZ5_UTILS_USB
+  select BR2_PACKAGE_BLUEZ5_UTILS_GATT
+
+  select BR2_PACKAGE_BOOST
+  select BR2_PACKAGE_BOOST_PROGRAM_OPTIONS
+
+  help
+    Implementation of Bluetooth Low Energy functions in modern C++,
+    without the BlueZ DBUS API.
