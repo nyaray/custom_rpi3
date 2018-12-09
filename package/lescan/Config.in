@@ -1,0 +1,8 @@
+config BR2_PACKAGE_LESCAN
+  bool "lescan"
+
+  select BR2_PACKAGE_LIBBLEPP
+
+  help
+    Bluetooth LE scanning program, based on libblepp
+
